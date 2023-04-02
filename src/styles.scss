@@ -1,0 +1,88 @@
+$table-border: 2px solid black;
+
+body {
+  background: #B5FBDD;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 50px;
+}
+pre {
+  background: white;
+  padding: 2px;
+}
+code {
+  background: white;
+  padding: 2px;
+}
+.editor-container {
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  height: auto;
+}
+.editor-header {
+  background: #48CFAF;
+  padding: 5px 10px;
+  border-bottom: 1px solid black;
+  span {
+    font-weight: bold;
+  }
+}
+#editor {
+  width: 100%;
+  background: #E4FFF9;
+  border: none;
+  resize: vertical;
+  min-height: 200px;
+  padding: 5px 7px;
+}
+.preview-container {
+  width: 100%;
+  max-width: 800px;
+  border: 1px solid black;
+}
+.preview-header {
+  background: #48CFAF;
+  padding: 5px 10px;
+  border-bottom: 1px solid black;
+  span {
+    font-weight: bold;
+  }
+}
+#preview {
+  padding: 10px 15px;
+  background: #E4FFF9;
+  p {
+    &:has(img) {
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+  img {
+    width: 90%;
+  }
+  table {
+    border: $table-border;
+    border-collapse: collapse;
+    th {
+      border: $table-border;
+      text-align: left;
+      padding: 3px 5px;
+    }
+    td {
+      border: $table-border;
+      padding: 3px 5px;
+    }
+  }
+  blockquote {
+    border-left: 3px solid black;
+    p {
+      margin-left: 5px;
+    }
+  }
+}
